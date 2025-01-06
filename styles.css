@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, 'Comic sans MS';
+}
+
+body{
+    background-color: #d7d7d7;
+}
+/** HEADER **/
+header{
+    margin: 20px 0 50px 0;
+    text-align: center;
+    width: 100%;
+}
+
+header img{
+    width: 15%;
+}
+
+/** MAIN **/
+
+main{
+    padding: 0 10px;
+}
+
+/** PARTIE COURS **/
+
+.tablecall h2{
+    margin: 0 60px;
+
+}
+
+.tableaux{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 10px
+}
+
+table{
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+table thead tr,th{
+    background-color: #2D4753;
+    color: white;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+table tbody tr,td{
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+}
+
+table tbody tr td:first-child{
+    background-color: #2D4753;
+    color: white;
+    text-align: center;
+}
+
+.construction{
+    margin: 0 0 50px 60px;
+}
+
+ /**PARTIE EXERCICE **/
+.exercice {
+    margin: 0 60px;
+}
+
+.exercices{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    display: 100%;
+}
+
+details{
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+details p{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 0 0 15px 15px;
+    padding: 5px 10px;
+    min-height: 85px;
+    background-color: white;
+}
+
+summary{
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: #2D4753;
+    color: white;
+    padding: 5px 10px;
+    min-height: 50px;
+}
+
+details[open] summary{
+    border-radius : 15px 15px 0 0;
+}
+
+.unite{
+color: #fb3c3c;
+font-weight: bold;
+}
+
+.codeten{
+color: #8e88c1;
+font-weight: bold;
+}
+
+.complement{
+    color: #3cb13c;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1150px){
+    details{
+        width: 90%;
+    }
+
+    .construction{
+        margin: 0 10px;
+    }
+}
